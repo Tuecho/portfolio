@@ -1,0 +1,176 @@
+/* Nuestro CSS */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #aeb6ca;
+    color: black;
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.header-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: border 0.3s ease;
+}
+
+.header-image:hover {
+    border: 5px solid rgb(19, 17, 146);
+}
+
+header p {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los enlaces */
+    flex-wrap: wrap; /* Permite que el texto y los enlaces se ajusten en pantallas pequeñas */
+}
+
+header a {
+    color: #007BFF; /* Color inicial del enlace */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+header a:hover {
+    color: red; /* Cambia a rojo al pasar el ratón */
+    transition: color 0.3s ease;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 800px;
+    background-color: #a6b2cc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    margin: 10px auto;
+    max-width: 800px;
+    bottom: 0;
+    /*width: 100%;*/
+    border-radius: 8px;
+
+}
+
+.project {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Para que se alineen en condiciones */
+.contact {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact li {
+    margin: 0;
+}
+
+/* Especificaciones del botón */
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius:25%;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Más especificaciones */
+.contact a i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    color: black;
+    border: 2px solid rgb(177, 196, 71);
+    
+}
+
+/* Investigado a través de internet para hacer responsive a los botones */
+@media (max-width: 600px) {
+    header, footer {
+        padding: 15px 0;
+    }
+
+    section {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .project {
+        padding: 8px;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    section {
+        padding: 18px;
+    }
+
+    .project {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 901px) {
+    section {
+        padding: 20px;
+    }
+}
